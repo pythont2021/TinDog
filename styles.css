@@ -28,7 +28,7 @@ p {
 }
 
 .container-fluid {
-  padding: 3% 15%;
+  padding: 3% 15% 7%;
 }
 
 /* nav-bar */
@@ -66,14 +66,18 @@ p {
 
 .title_img {
   width: 60%;
-  /* height: 60%; */
   transform: rotate(25deg);
+  position: absolute;
+  right: 30%;
 }
 
 /* features section */
 
 #features{
   padding: 7% 15%;
+  background-color: #fff;
+  position: relative;
+  z-index: 1;
 }
 
 .feature-box{
@@ -94,10 +98,8 @@ p {
 /*Testimonials section*/
 
 #testimonials {
-
   background-color: #ef8172;
   text-align: center;
-
 }
 
 #testimonials h2 {
@@ -135,7 +137,6 @@ padding: 7% 15%;
 #pricing {
   padding:100px;
   text-align: center;
-
 }
 
 .Pricing-column {
@@ -147,5 +148,48 @@ padding: 7% 15%;
   font-size: 3rem;
   line-height: 1.5;
   font-weight: 700 ;
+}
+
+@media (max-width:1028px) {
   
+  #title {
+  text-align: center;
+  }
+  
+  .title_img {
+    position: static;
+    transform: rotate( 0deg)
+   }  
+}
+
+/* Call to Action */
+
+#cta {
+  padding: 7% 15%;
+  text-align: center;
+  background-color: #ff4c68;
+ 
+}
+
+.cta-heading {
+
+  font-family: 'Montserrat';
+  font-size: 3.5rem;
+  line-height: 1.5;
+  font-weight: 700 ;
+  color: #fff;
+}
+
+/* Footer */
+
+#footer {
+  padding: 7% 15%;
+  text-align: center;
+  background-color: #fff;
+
+}
+
+.socialIcon {
+  color: black;
+  margin:20px 10px;
 }
