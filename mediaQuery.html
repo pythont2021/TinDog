@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media query</title>
+    <style>
+        .box{
+            background-color: lightcoral;
+            color: #fff;
+            text-align: center;
+            display: none;
+        }
+        @media (max-width:360px) {
+            #mobile {
+                background-color: rgb(101, 138, 139);
+                display: block;
+                font-weight: bold;
+                font-size: 1rem;
+            }
+        }
+        @media (min-width:361px) and (max-width:768px) {
+            #tablet {
+                background-color: greenyellow;
+                display: block;
+                font-weight: bold;
+                font-size: 2rem;
+            }
+        }
+        @media (min-width:769px) and (max-width:992px) {
+            #laptop {
+                background-color: hotpink;
+                display: block;
+                font-weight: bold;
+                font-size: 3rem;
+            }
+        }
+        @media (min-width:993px) {
+            #desktop {
+                display: block;
+                font-weight: bold;
+                font-size: 4rem;
+            }
+        }
+        @media print{
+            .box {
+                display: block;
+                font-weight: bold;
+                font-size: 3rem;
+                color: lime;
+            }
+        }
+        @media speech{
+            .box {
+                display: block;
+                font-weight: bold;
+                font-size: 3rem;
+                color: lime;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    
+    <!-- div.box#box-$*4 -->
+
+    <div class="box" id="desktop"> i am desktop </div>
+    <div class="box" id="laptop"> i am laptop </div>
+    <div class="box" id="tablet"> i am tablet </div>
+    <div class="box" id="mobile"> i am mobile </div>
+
+</body>
+
+</html>
